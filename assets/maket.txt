@@ -1,5 +1,7 @@
-Сайт магазин автотюнинга
+пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 https://www.figma.com/file/8kAtzWIFROmrRRKiy1ckbO/CARCAIN-WORK-AREA?node-id=360%3A23296
 
 header 3.35
 footer 1.5
+form   1.5
+all    6.3

@@ -131,3 +131,17 @@ a {
     transform: translateY(-2px);
   }
 }
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Montserrat", serif;
+  line-height: 1.1;
+  letter-spacing: -0.41px;
+  color: #f05454;
+}
+.descr {
+  font-size: 24px;
+  color: #4f4f4f;
+  max-width: 600px;
+  margin: 0px 0px 20px 0px;
+}
