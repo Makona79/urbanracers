@@ -138,10 +138,6 @@
 
   &__logo {
     margin: 0 0 0 15px;
-    transition: transform 0.3s ease-in-out;
-    &:hover {
-      transform: translateY(-2px);
-    }
   }
 
   // .main-header__list
