@@ -29,6 +29,12 @@
   // .top__region
 
   &__region {
+    a {
+      color: #4f4f4f;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   // .top__right
@@ -51,6 +57,7 @@
     transition: transform 0.3s ease-in-out;
     &:hover {
       transform: translateY(-2px);
+      text-decoration: underline;
     }
     img {
       margin: 0 8px 0 0;
@@ -71,7 +78,13 @@
     align-items: center;
     color: #4f4f4f;
     font-weight: 600;
-    padding: 3px 0px 3px 16px;
+    padding: 3px;
+    margin: 0 0 0 15px;
+    border: 1px solid transparent;
+    transition: border 0.3s ease-in-out;
+    &:hover {
+      border: 1px solid rgba(79, 79, 79, 0.3);
+    }
   }
 
   // .top__user-img
@@ -167,7 +180,11 @@
     justify-content: center;
     align-items: center;
   }
-
+  &__box-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   // .main-header__image
 
   &__image {
