@@ -1,6 +1,35 @@
 <footer class="footer">
   <div class="footer__container container">
-    <div class="footer__form"></div>
+    <div class="footer__form form-block">
+      <h3 class="form-block__title">
+        Мы&nbsp;готовы ответить на&nbsp;все ваши вопросы!
+      </h3>
+      <form action="#" class="form-block__form form" method="POST">
+        <label class="form__label"
+          >Email
+          <input
+            class="form__input input-mail"
+            type="email"
+            data-validate-field="email"
+            name="Email"
+            placeholder="example@email.com"
+          />
+        </label>
+        <label class="form__label">
+          Телефон
+          <input
+            class="form__input input-name input-tel"
+            type="tel"
+            data-validate-field="tel"
+            name="tel"
+            placeholder="+7&nbsp; 888&nbsp; 888&nbsp; 88&nbsp; 88"
+          />
+        </label>
+        <button type="submit" class="form__button btn btn-reset">
+          <span>Задать вопрос</span>
+        </button>
+      </form>
+    </div>
     <div class="footer__main">
       <div class="footer__top top-footer">
         <div class="top-footer__column">
