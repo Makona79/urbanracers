@@ -1,0 +1,166 @@
+.tabs {
+  @include tabs;
+}
+
+.act {
+  position: relative;
+  padding: 60px 0 220px;
+
+  // .act__bg
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .act__content
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: max(15px, calc((100% - 1680px) / 2));
+  }
+
+  // .act__title
+
+  &__title {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #fefefe;
+    letter-spacing: -0.41px;
+    margin: 0px 0px 35px 0px;
+  }
+}
+
+.tabs {
+  // .tabs__nav
+
+  &__nav {
+    display: flex;
+    margin: 0px 0px 56px 0px;
+  }
+
+  // .tabs__nav-item
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin: 0 12px 0 0;
+    }
+  }
+
+  // .tabs__nav-btn
+
+  &__nav-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #fefefe;
+    letter-spacing: 1.5%;
+  }
+
+  // .tabs__content
+
+  &__content {
+  }
+
+  // .tabs__panel
+
+  &__panel {
+  }
+}
+
+.panel-tabs {
+  // .panel-tabs__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .panel-tabs__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 355px;
+    height: auto;
+    padding: 18px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 28px 104px rgba(41, 41, 41, 0.15);
+    margin: 0px 10px 0px 0px;
+  }
+
+  // .panel-tabs__image
+
+  &__image {
+    width: 319px;
+    height: 221px;
+    border-radius: 4px;
+    margin: 0px 0px 15px 0px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  // .panel-tabs__title
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.5%;
+    margin: 0px 0px 10px 0px;
+    color: #151d0c;
+  }
+
+  // .panel-tabs__descr
+
+  &__descr {
+    color: #8a8e85;
+    margin: 0px 0px 9px 0px;
+  }
+
+  // .panel-tabs__bottom
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  // .panel-tabs__date
+
+  &__date {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    color: #30475e;
+    margin: 0px 15px 0px 0px;
+  }
+
+  // .panel-tabs__link
+
+  &__link {
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    color: #f05454;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

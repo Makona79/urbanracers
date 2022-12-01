@@ -1,119 +1,176 @@
 <section class="categories">
+  <div class="categories__bg">
+    <picture>
+      <source srcset="img/categories/decor.webp" type="image/webp" />
+      <img
+        src="img/categories/decor.png"
+        class="image"
+        width="814"
+        height="655"
+        alt="декор в виде следов шин"
+      />
+    </picture>
+  </div>
   <div class="categories__container container">
-    <div class="categories__box">
-      <h3 class="categories__title title">Категории товаров</h3>
-      <p class="categories__descr descr">
-        Выберите категорию котоаря вас интересует. Тут есть все&nbsp;&mdash;
-        от&nbsp;ГБЦ до&nbsp;футболки с&nbsp;логотипом БМВ М&nbsp;повер-рейнджерс
-      </p>
-      <div class="categories__opt">
-        <p class="categories__text">Показать все товары</p>
-        <a href="#" class="categories__opt-link">Перейти в каталог ></a>
-      </div>
-      <div class="categories__opt">
-        <p class="categories__text">Не знаете что выбрать?</p>
-        <a href="#" class="categories__opt-link">Получить консультанцию > </a>
-      </div>
+    <div class="categories__form form-block">
+      <h3 class="form-block__title">
+        Мы&nbsp;готовы ответить на&nbsp;все ваши вопросы!
+      </h3>
+      <form action="#" class="form-block__form form" method="POST">
+        <label class="form__label"
+          >Email
+          <input
+            class="form__input input-mail"
+            type="email"
+            data-validate-field="email"
+            name="Email"
+            placeholder="example@email.com"
+          />
+        </label>
+        <label class="form__label">
+          Телефон
+          <input
+            class="form__input input-name input-tel"
+            type="tel"
+            data-validate-field="tel"
+            name="tel"
+            placeholder="+7&nbsp; 888&nbsp; 888&nbsp; 88&nbsp; 88"
+          />
+        </label>
+        <button type="submit" class="form__button btn btn-reset">
+          <span>Задать вопрос</span>
+        </button>
+      </form>
     </div>
-    <div class="categories__content">
-      <ul class="categories__list list-reset">
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img
-              src="img/categories/card/img01.svg"
-              alt="Трубины и турбокомплекты"
-            />
-            <span>Трубины и турбокомплекты</span>
+    <div class="categories__body">
+      <div class="categories__box">
+        <h3 class="categories__title title">Категории товаров</h3>
+        <p class="categories__descr descr">
+          Выберите категорию котоаря вас интересует. Тут есть все&nbsp;&mdash;
+          от&nbsp;ГБЦ до&nbsp;футболки с&nbsp;логотипом БМВ
+          М&nbsp;повер-рейнджерс
+        </p>
+        <div class="categories__opt">
+          <img src="img/categories/btnFon01.png" alt="fon" />
+          <p class="categories__text">Показать все товары</p>
+          <a href="#" class="categories__opt-link"
+            >Перейти в каталог&nbsp;&nbsp; ></a
+          >
+        </div>
+        <div class="categories__opt">
+          <img src="img/categories/btnFon02.png" alt="fon" />
+          <p class="categories__text">Не знаете что выбрать?</p>
+          <a href="#" class="categories__opt-link"
+            >Получить консультанцию&nbsp;&nbsp; >
           </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img
-              src="img/categories/card/img02.svg"
-              alt="Тормоза и тормозные системы"
-            />
-            <span>Тормоза и тормозные системы</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img03.svg" alt="Охлаждение" />
-            <span>Охлаждение</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img04.svg" alt="Подвеска" />
-            <span>Подвеска</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img05.svg" alt="Подарки и мерч" />
-            <span>Подарки и мерч</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img06.svg" alt="Другое" />
-            <span> Другое </span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img07.svg" alt="Двигатель" />
-            <span>Двигатель</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img08.svg" alt="Трансмиссия" />
-            <span>Трансмиссия</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img09.svg" alt="Топливные системы" />
-            <span>Топливные системы</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img
-              src="img/categories/card/img10.svg"
-              alt="Интерьер и экстерьер"
-            />
-            <span>Интерьер и экстерьер</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img11.svg" alt="Шины и диски" />
-            <span>Шины и диски</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img
-              src="img/categories/card/img12.svg"
-              alt="Оригинальные запчасти"
-            />
-            <span>Оригинальные запчасти</span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img13.svg" alt="Выпускная система" />
-            <span>Выпускная система </span>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">
-            <img src="img/categories/card/img14.svg" alt="Впускная система" />
-            <span>Впускная система</span>
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div class="categories__content">
+        <ul class="categories__list list-reset">
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img
+                src="img/categories/card/img01.svg"
+                alt="Трубины и турбокомплекты"
+              />
+              <span>Трубины и турбокомплекты</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img
+                src="img/categories/card/img02.svg"
+                alt="Тормоза и тормозные системы"
+              />
+              <span>Тормоза и тормозные системы</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img03.svg" alt="Охлаждение" />
+              <span>Охлаждение</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img04.svg" alt="Подвеска" />
+              <span>Подвеска</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img05.svg" alt="Подарки и мерч" />
+              <span>Подарки и мерч</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img06.svg" alt="Другое" />
+              <span> Другое </span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img07.svg" alt="Двигатель" />
+              <span>Двигатель</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img08.svg" alt="Трансмиссия" />
+              <span>Трансмиссия</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img
+                src="img/categories/card/img09.svg"
+                alt="Топливные системы"
+              />
+              <span>Топливные системы</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img
+                src="img/categories/card/img10.svg"
+                alt="Интерьер и экстерьер"
+              />
+              <span>Интерьер и экстерьер</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img11.svg" alt="Шины и диски" />
+              <span>Шины и диски</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img
+                src="img/categories/card/img12.svg"
+                alt="Оригинальные запчасти"
+              />
+              <span>Оригинальные запчасти</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img
+                src="img/categories/card/img13.svg"
+                alt="Выпускная система"
+              />
+              <span>Выпускная система </span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <img src="img/categories/card/img14.svg" alt="Впускная система" />
+              <span>Впускная система</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
