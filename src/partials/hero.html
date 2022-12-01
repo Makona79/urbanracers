@@ -12,7 +12,11 @@
         </p>
         <button class="top-hero__btn btn btn-reset">Перейти в каталог</button>
       </div>
-      <div class="hero__slider">fffff</div>
+      <div class="top-hero__slider">
+        ffvfff
+        <div class="dd">d</div>
+        <div class="dd">d</div>
+      </div>
     </div>
     <div class="hero__bottom bottom-hero">
       <div class="bottom-hero__container container">
@@ -24,9 +28,45 @@
           </p>
         </div>
         <div class="bottom-hero__right">
-          <div class="bottom-hero__sel">марку</div>
-          <div class="bottom-hero__sel">модель</div>
-          <div class="bottom-hero__sel">мод</div>
+          <div class="bottom-hero__sel">
+            <select
+              name="mark"
+              id="mark"
+              class="select select-mark bottom-hero__sel-mark"
+              aria-label="Выбор марки автомобиля"
+            >
+              <option value="">Выберите марку автомобиля</option>
+              <option value="WV">WV</option>
+              <option value="BMV">BMV</option>
+              <option value="VAZ">VAZ</option>
+            </select>
+          </div>
+          <div class="bottom-hero__sel">
+            <select
+              name="model"
+              id="model"
+              class="select select-model"
+              aria-label="Выбор модели автомобиля"
+            >
+              <option value="">Выберите модель автомобиля</option>
+              <option value="WV">Tiguane</option>
+              <option value="BMV">golf</option>
+              <option value="VAZ">Passat</option>
+            </select>
+          </div>
+          <div class="bottom-hero__sel">
+            <select
+              name="modif"
+              id="modif"
+              class="select select-modif"
+              aria-label="Выбор модификацию автомобиля"
+            >
+              <option value="">Выберите модификацию</option>
+              <option value="WV">170 л.с.</option>
+              <option value="BMV">210 л.с.</option>
+              <option value="VAZ">300 л.с.</option>
+            </select>
+          </div>
           <button class="bottom-hero__btn btn btn-reset">Подобрать</button>
         </div>
       </div>

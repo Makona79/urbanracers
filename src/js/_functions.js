@@ -34,8 +34,8 @@ import { burger } from "./functions/burger";
 // const modal = new GraphModal();
 
 // Реализация табов
- import GraphTabs from 'graph-tabs';
- const tabs = new GraphTabs('tab');
+import GraphTabs from "graph-tabs";
+const tabs = new GraphTabs("tab");
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
@@ -113,3 +113,37 @@ const afterForm = () => {
 };
 
 validateForms(".form", rules1, afterForm);
+
+const markSelect = () => {
+  const element = document.querySelector(".select-mark");
+  const choices = new Choices(element, {
+    searchEnabled: false,
+  });
+
+  let ariaLabel = element.getAttribute("aria-label");
+  element.closest(".choices").setAttribute("aria-label", ariaLabel);
+};
+
+markSelect();
+const modelSelect = () => {
+  const element = document.querySelector(".select-model");
+  const choices = new Choices(element, {
+    searchEnabled: false,
+  });
+
+  let ariaLabel = element.getAttribute("aria-label");
+  element.closest(".choices").setAttribute("aria-label", ariaLabel);
+};
+
+modelSelect();
+const modifSelect = () => {
+  const element = document.querySelector(".select-modif");
+  const choices = new Choices(element, {
+    searchEnabled: false,
+  });
+
+  let ariaLabel = element.getAttribute("aria-label");
+  element.closest(".choices").setAttribute("aria-label", ariaLabel);
+};
+
+modifSelect();
