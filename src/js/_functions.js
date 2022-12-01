@@ -55,8 +55,14 @@ Swiper.use([Navigation, Pagination]);
 
 const mySwiper = new Swiper(".hero__slider-main", {
   loop: true,
-  lazy: true,
-  slidesPerView: "auto",
+  slidesPerView: 2,
+  grabCursor: true,
+  // centeredSlides: true,
+  // autoplay: {
+  //   delay: true,
+  //   disableOnInteraction: false,
+  // },
+
   // If we need pagination
   pagination: {
     el: ".main-slider__pagination",
