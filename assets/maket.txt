@@ -8,4 +8,5 @@ footer 1.30
 
 form   1.30
 hero+categories 1.30
-all    8
+act 2.30
+all    10.30
