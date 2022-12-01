@@ -50,11 +50,25 @@ const tabs = new GraphTabs("tab");
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Pagination } from "swiper";
+Swiper.use([Navigation, Pagination]);
+
+const mySwiper = new Swiper(".hero__slider-main", {
+  loop: true,
+  lazy: true,
+  slidesPerView: "auto",
+  // If we need pagination
+  pagination: {
+    el: ".main-slider__pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: ".main-slider__button-next",
+  //   prevEl: ".main-slider__button-prev",
+  // },
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
