@@ -58,7 +58,7 @@ const mySwiper = new Swiper(".hero__slider-main", {
   slidesPerView: 2,
   spaceBetween: 0,
   grabCursor: true,
-  //centeredSlides: true,
+
   // autoplay: {
   //   delay: true,
   //   disableOnInteraction: false,
@@ -69,7 +69,29 @@ const mySwiper = new Swiper(".hero__slider-main", {
     el: ".main-slider__pagination",
     clickable: true,
   },
-
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 0,
+      centeredSlides: true,
+    },
+    768: {
+      slidesPerView: 1.3,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 1.8,
+      spaceBetween: 0,
+    },
+    1400: {
+      slidesPerView: 1.3,
+      spaceBetween: 0,
+    },
+    1600: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+  },
   // Navigation arrows
   // navigation: {
   //   nextEl: ".main-slider__button-next",
