@@ -5,6 +5,9 @@
 .act {
   position: relative;
   padding: 60px 0 220px;
+  @include tablet {
+    padding: 60px 0 40px;
+  }
 
   // .act__bg
 
@@ -30,8 +33,10 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-
     padding-left: max(15px, calc((100% - 1680px) / 2));
+    @include tablet {
+      padding: 0 15px;
+    }
   }
 
   // .act__title
@@ -90,6 +95,8 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   // .panel-tabs__item
@@ -99,13 +106,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 355px;
+    width: 350px;
     height: auto;
     padding: 18px;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0 28px 104px rgba(41, 41, 41, 0.15);
-    margin: 0px 10px 0px 0px;
+    margin: 0px 10px 20px 0px;
+    @media (max-width: 375px) {
+      width: 300px;
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   // .panel-tabs__image
@@ -116,6 +127,10 @@
     border-radius: 4px;
     margin: 0px 0px 15px 0px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+    @media (max-width: 375px) {
+      width: 270px;
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   // .panel-tabs__title
@@ -159,7 +174,7 @@
     font-family: "Montserrat", serif;
     font-weight: 700;
     color: #f05454;
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }

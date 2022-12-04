@@ -72,12 +72,12 @@ const mySwiper = new Swiper(".hero__slider-main", {
   breakpoints: {
     320: {
       slidesPerView: 1.2,
-      spaceBetween: 0,
+      spaceBetween: 5,
       centeredSlides: true,
     },
     768: {
       slidesPerView: 1.3,
-      spaceBetween: 0,
+      spaceBetween: 10,
     },
     1024: {
       slidesPerView: 1.8,

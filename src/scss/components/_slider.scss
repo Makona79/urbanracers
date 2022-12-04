@@ -16,6 +16,12 @@
     align-items: flex-end;
     width: 502px;
     height: 400px;
+    @include small-tablet {
+      height: 300px;
+    }
+    @include mobile {
+      height: 200px;
+    }
 
     transition: transform 0.5s ease-in-out;
     &.swiper-slide-active {
@@ -54,6 +60,9 @@
     justify-content: center;
     align-items: flex-start;
     margin: 36px 31px;
+    @media (max-width: 480px) {
+      margin: 20px;
+    }
   }
   &__title {
     color: var(--light-color);
@@ -61,6 +70,9 @@
     font-size: 18px;
     line-height: 140%;
     margin: 0 0 15px 0;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   }
   &__descr {
     display: flex;
@@ -69,6 +81,11 @@
       width: 111px;
       height: 49px;
       margin: 0 25px 0 0;
+      @media (max-width: 480px) {
+        width: 55px;
+        height: auto;
+        margin: 0 15px 0 0;
+      }
     }
   }
   &__text {
@@ -77,6 +94,9 @@
     font-weight: 600;
     font-size: 28px;
     margin: 0;
+    @include small-tablet {
+      font-size: 20px;
+    }
   }
 
   &__pagination {

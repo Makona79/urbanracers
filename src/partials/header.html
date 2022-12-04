@@ -35,23 +35,31 @@
           <a href="/" class="main-header__logo logo">
             <img src="img/logo.svg" alt="logo" />
           </a>
-          <ul class="main-header__list list-reset">
-            <li class="main-header__item">
-              <a href="#" class="main-header__link active">Главная</a>
-            </li>
-            <li class="main-header__item">
-              <a href="#" class="main-header__link">Каталог</a>
-            </li>
-            <li class="main-header__item">
-              <a href="#" class="main-header__link">Информация</a>
-            </li>
-            <li class="main-header__item">
-              <a href="#" class="main-header__link">Контакты</a>
-            </li>
-            <li class="main-header__item">
-              <a href="#" class="main-header__link">Еще...</a>
-            </li>
-          </ul>
+          <nav class="nav" title="Главное меню" data-menu>
+            <ul class="main-header__list list-reset">
+              <li class="main-header__item">
+                <a href="#" class="main-header__link active" data-menu-item
+                  >Главная</a
+                >
+              </li>
+              <li class="main-header__item">
+                <a href="#" class="main-header__link" data-menu-item>Каталог</a>
+              </li>
+              <li class="main-header__item">
+                <a href="#" class="main-header__link" data-menu-item
+                  >Информация</a
+                >
+              </li>
+              <li class="main-header__item">
+                <a href="#" class="main-header__link" data-menu-item
+                  >Контакты</a
+                >
+              </li>
+              <li class="main-header__item">
+                <a href="#" class="main-header__link" data-menu-item>Еще...</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="main-header__box">
           <div class="main-header__box-btns">
@@ -61,13 +69,21 @@
             <a href="#" class="main-header__image">
               <img src="img/icons/favorite.svg" alt="favorite"
             /></a>
-            <a href="#" class="main-header__image">
+            <a href="#" class="main-header__image main-header__cart">
               <img src="img/icons/cart.svg" alt="cart"
             /></a>
           </div>
 
           <button class="main-header__button btn btn-reset">
             Подбор по автомобилю
+          </button>
+          <button
+            class="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            data-burger
+          >
+            <span class="burger__line"></span>
           </button>
         </div>
       </div>

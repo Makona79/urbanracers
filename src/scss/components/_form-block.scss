@@ -10,6 +10,10 @@
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.14), 0 12px 12px rgba(0, 0, 0, 0.14);
   padding: 45px;
   z-index: 10;
+  @include tablet {
+    display: none;
+  }
+
   // .form-block__title
 
   &__title {
@@ -19,6 +23,9 @@
     font-family: "Montserrat", serif;
     color: #0b132a;
     margin: 0 40px 0 15px;
+    @media (max-width: 1450px) {
+      font-size: 24px;
+    }
   }
 
   // .form-block__form
@@ -38,6 +45,7 @@
     display: inline-flex;
     flex-direction: column;
     font-weight: 600;
+    margin: 0 15px 0 0;
   }
 
   // .form__input
@@ -53,6 +61,15 @@
     &::placeholder {
       color: #313650;
       font-weight: 600;
+    }
+    @media (max-width: 1600px) {
+      width: 300px;
+    }
+    @media (max-width: 1350px) {
+      width: 250px;
+    }
+    @media (max-width: 1150px) {
+      width: 200px;
     }
   }
 

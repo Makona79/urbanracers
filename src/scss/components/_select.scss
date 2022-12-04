@@ -6,6 +6,9 @@
   min-height: auto;
   width: 355px;
   height: 44px;
+  @media (max-width: 380px) {
+    width: 300px;
+  }
 }
 .choices__item {
   line-height: 1;
