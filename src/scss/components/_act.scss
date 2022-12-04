@@ -97,8 +97,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 0 30px 0;
   }
-
+  &__box:nth-child(n + 6) {
+    display: none;
+  }
+  &__box.is-visible {
+    display: block;
+  }
   // .panel-tabs__item
 
   &__item {
@@ -113,6 +119,7 @@
     background-color: #fff;
     box-shadow: 0 28px 104px rgba(41, 41, 41, 0.15);
     margin: 0px 10px 20px 0px;
+
     @media (max-width: 375px) {
       width: 300px;
       margin: 0px 0px 20px 0px;
